@@ -1,11 +1,12 @@
 class Solution {
-    public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
-        int count=0;
-        for(int i=0;i<hours.length;i++){
-            if(hours[i]>=target){
-                count++;
-            }
+    public int kthGrammar(int n, int k) {
+        if (n == 1) return 0;
+
+        int half = 1<<(n-2);
+        if(k>half){
+            return kthGrammar(n - 1, k - half) ^ 1;
         }
-        return count;
+        return kthGrammar(n - 1, k);
     }
 }
+
