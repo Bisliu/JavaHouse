@@ -70,7 +70,8 @@
 //         return ret;
 //     }
 // }
-// class Solution {
+//面试题 16.05. 阶乘尾数
+//class Solution {
 //     public int trailingZeroes(int n) {
 //         int count = 0;
 
